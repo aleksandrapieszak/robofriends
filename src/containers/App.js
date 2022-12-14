@@ -16,12 +16,11 @@ function App() {
                  .then(response =>response.json()
                  )
                  .then(users => {setRobots(users)})
-        console.log(count)
         //wczytywanie na początku,
         // jakby było searchfield ->
         // wczytywanie wtedy kiedy zmienia się pole,
         // a robots -> to cały czas
-        },[count])
+        },[])
 
     const onSearchChange = (event) => {
         setSearchfield(event.target.value)
